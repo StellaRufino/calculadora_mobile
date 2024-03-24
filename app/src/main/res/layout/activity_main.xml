@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber2"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adição" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtração" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplicação" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Divisão" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumber1"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Digite um número" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="16dp"
+        android:text="Resultado: " />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="16dp"
+        android:text="Calcular"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#8E0C02" />
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewtTitulo"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Digite um número" />
+
+    <TextView
+        android:id="@+id/textViewtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="CALCULADORA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textAllCaps="false" />
+
+
+</RelativeLayout>
